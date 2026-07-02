@@ -6,7 +6,6 @@
     <div class="container">
         <div class="row g-0 shadow-lg mx-auto" style="border:1px solid rgba(201,146,42,0.2); min-height:500px; max-width:900px;">
 
-            {{-- COLUMNA IMAGEN --}}
             <div class="col-lg-6 d-none d-lg-block position-relative overflow-hidden">
                 <img src="{{ asset('images/flag.png') }}" alt="ThousandGym"
                      style="width:100%; height:100%; object-fit:cover; opacity:0.85;">
@@ -17,7 +16,6 @@
                 </div>
             </div>
 
-            {{-- COLUMNA FORMULARIO --}}
             <div class="col-lg-6 bg-ocean p-5 d-flex flex-column justify-content-center">
 
                 <div class="mb-4">
@@ -25,7 +23,6 @@
                     <h3 class="font-cinzel text-gold">Iniciar Sesión</h3>
                 </div>
 
-                {{-- Mensajes de error --}}
                 @if ($errors->any())
                     <div class="alert mb-3" style="background:rgba(232,53,32,0.15); border:1px solid rgba(232,53,32,0.3); color:#E83520;">
                         @foreach ($errors->all() as $error)
@@ -43,7 +40,6 @@
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
-                    {{-- EMAIL --}}
                     <div class="mb-3">
                         <label class="font-bebas text-muted-op mb-1" style="letter-spacing:0.1em;">Correo Electrónico</label>
                         <input type="email" name="email" value="{{ old('email') }}"
@@ -54,7 +50,7 @@
                         @enderror
                     </div>
 
-                    {{-- PASSWORD --}}
+
                     <div class="mb-3">
                         <label class="font-bebas text-muted-op mb-1" style="letter-spacing:0.1em;">Contraseña</label>
                         <input type="password" name="password"
@@ -65,7 +61,7 @@
                         @enderror
                     </div>
 
-                    {{-- REMEMBER ME --}}
+
                     <div class="mb-4 d-flex justify-content-between align-items-center">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" name="remember" id="remember">

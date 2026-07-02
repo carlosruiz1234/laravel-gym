@@ -6,7 +6,6 @@
     <div class="container">
         <div class="row g-0 shadow-lg mx-auto" style="border:1px solid rgba(201,146,42,0.2); max-width:900px;">
 
-            {{-- COLUMNA IMAGEN --}}
             <div class="col-lg-6 d-none d-lg-block position-relative overflow-hidden">
                 <img src="{{ asset('images/flag.png') }}" alt="ThousandGym"
                      style="width:100%; height:100%; object-fit:cover; opacity:0.85;">
@@ -17,7 +16,6 @@
                 </div>
             </div>
 
-            {{-- COLUMNA FORMULARIO --}}
             <div class="col-lg-6 bg-ocean p-5 d-flex flex-column justify-content-center">
 
                 <div class="mb-4">

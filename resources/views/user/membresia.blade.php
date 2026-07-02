@@ -6,7 +6,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">⚓ Elige tu Poder</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Elige tu Poder</p>
             <h1 class="font-cinzel text-gold">Membresías</h1>
             <p class="fst-italic text-muted-op">"Cada pirata elige su propio camino."</p>
         </div>
@@ -29,11 +29,11 @@
 
                     @if(auth()->user()->membresia_id == $membresia->id)
                         <button class="btn font-bebas w-100" style="background:rgba(201,146,42,0.2); color:#F0C060; border:1px solid #C9922A; letter-spacing:0.15em;">
-                            ✅ Plan Actual
+                             Plan Actual
                         </button>
                     @else
                         <a href="/user/membresia/{{ $membresia->id }}/pago" class="btn btn-outline-gold font-bebas w-100" style="letter-spacing:0.15em;">
-                            💰 Comprar Plan
+                             Comprar Plan
                         </a>
                     @endif
                 </div>

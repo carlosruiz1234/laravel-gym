@@ -6,7 +6,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">👑 Panel de Administración</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Panel de Administración</p>
             <h1 class="font-cinzel text-gold">Bienvenido, {{ auth()->user()->name }}</h1>
             <p class="fst-italic text-muted-op">"El Rey de los Piratas manda aquí."</p>
         </div>
@@ -43,7 +43,7 @@
         <div class="row g-3">
             <div class="col-md-4">
                 <div class="card-op p-4 h-100">
-                    <div class="fs-2 mb-3">👥</div>
+                    <div class="fs-2 mb-3"></div>
                     <div class="font-bebas text-gold fs-5 mb-2">Usuarios</div>
                     <p class="text-muted-op small mb-3">Ver todos los tripulantes registrados y sus membresías.</p>
                     <a href="/admin/usuarios" class="btn btn-outline-gold btn-sm font-bebas">Ver Usuarios →</a>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card-op p-4 h-100">
-                    <div class="fs-2 mb-3">💳</div>
+                    <div class="fs-2 mb-3"></div>
                     <div class="font-bebas text-gold fs-5 mb-2">Membresías</div>
                     <p class="text-muted-op small mb-3">Gestiona los planes Pirata, Shichibukai y Yonkou.</p>
                     <a href="/admin/membresias" class="btn btn-outline-gold btn-sm font-bebas">Ver Membresías →</a>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card-op p-4 h-100">
-                    <div class="fs-2 mb-3">🥊</div>
+                    <div class="fs-2 mb-3"></div>
                     <div class="font-bebas text-gold fs-5 mb-2">Clases</div>
                     <p class="text-muted-op small mb-3">Gestiona las clases disponibles por membresía.</p>
                     <a href="/admin/clases" class="btn btn-outline-gold btn-sm font-bebas">Ver Clases →</a>
@@ -68,7 +68,7 @@
         </div>
 
         <div class="mt-5">
-            <a href="/" class="btn btn-op-red font-bebas px-4" style="letter-spacing:0.15em;">⚓ Volver al Inicio</a>
+            <a href="/" class="btn btn-op-red font-bebas px-4" style="letter-spacing:0.15em;"> Volver al Inicio</a>
         </div>
 
     </div>

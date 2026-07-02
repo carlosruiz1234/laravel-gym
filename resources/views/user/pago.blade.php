@@ -6,7 +6,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">💰 Confirmar Compra</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Confirmar Compra</p>
             <h1 class="font-cinzel text-gold">Resumen de Pago</h1>
         </div>
 
@@ -26,23 +26,23 @@
             {{-- DATOS DEL USUARIO Y CONFIRMACION --}}
             <div class="col-md-6">
                 <div class="card-op p-4">
-                    <div class="font-bebas text-gold fs-5 mb-4" style="letter-spacing:0.1em;">📋 Tus Datos</div>
+                    <div class="font-bebas text-gold fs-5 mb-4" style="letter-spacing:0.1em;"> Tus Datos</div>
 
                     <p class="text-muted-op small mb-1">Nombre: <span class="text-white">{{ $user->name }}</span></p>
                     <p class="text-muted-op small mb-1">Cédula: <span class="text-white">{{ $user->cedula }}</span></p>
                     <p class="text-muted-op small mb-1">Email: <span class="text-white">{{ $user->email }}</span></p>
-                    <p class="text-muted-op small mb-4">Método de pago: <span class="text-white">💵 Efectivo</span></p>
+                    <p class="text-muted-op small mb-4">Método de pago: <span class="text-white"> Efectivo</span></p>
 
                     <div class="p-3 mb-4" style="background:rgba(201,146,42,0.1); border:1px solid rgba(201,146,42,0.3);">
                         <p class="font-bebas text-gold mb-1" style="letter-spacing:0.1em;">Total a pagar:</p>
                         <p class="text-white fs-3 mb-0">${{ $membresia->precio }}</p>
-                        <p class="text-muted-op small mt-1">⚠️ El pago se realiza en caja al momento de la visita.</p>
+                        <p class="text-muted-op small mt-1"> El pago se realiza en caja al momento de la visita.</p>
                     </div>
 
                     <form method="POST" action="/user/membresia/{{ $membresia->id }}/pago">
                         @csrf
                         <button type="submit" class="btn btn-op-red w-100 font-bebas btn-lg" style="letter-spacing:0.2em;">
-                            ✅ Confirmar Plan
+                             Confirmar Plan
                         </button>
                     </form>
 

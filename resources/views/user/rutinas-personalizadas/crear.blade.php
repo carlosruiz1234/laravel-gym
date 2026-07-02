@@ -6,7 +6,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">💪 Nuevo Ejercicio</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Nuevo Ejercicio</p>
             <h1 class="font-cinzel text-gold">Agregar Ejercicio</h1>
         </div>
 

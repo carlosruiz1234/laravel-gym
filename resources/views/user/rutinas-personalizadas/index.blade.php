@@ -7,7 +7,7 @@
 
         <div class="mb-5 d-flex justify-content-between align-items-end">
             <div>
-                <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">💪 Mi Entrenamiento</p>
+                <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Mi Entrenamiento</p>
                 <h1 class="font-cinzel text-gold">Rutina Personalizada</h1>
                 <p class="fst-italic text-muted-op">{{ $rutinas->count() }} ejercicios creados</p>
             </div>
@@ -22,7 +22,7 @@
 
         @if($rutinas->count() == 0)
             <div class="card-op p-5 text-center">
-                <div class="fs-1 mb-3">💪</div>
+                <div class="fs-1 mb-3"></div>
                 <h3 class="font-cinzel text-gold mb-3">No tienes ejercicios aún</h3>
                 <p class="text-muted-op mb-4">Crea tu primera rutina personalizada.</p>
                 <a href="/user/rutinas-personalizadas/crear" class="btn btn-op-red font-bebas px-4" style="letter-spacing:0.15em;">+ Agregar Ejercicio</a>
@@ -34,9 +34,9 @@
                     <div class="card-op p-4 h-100">
                         <div class="font-bebas text-red-op mb-1" style="letter-spacing:0.2em;">{{ $rutina->dia }}</div>
                         <div class="font-bebas text-gold fs-4 mb-2">{{ $rutina->ejercicio }}</div>
-                        <p class="text-muted-op small mb-1">📊 Series: <span class="text-white">{{ $rutina->series }}</span></p>
+                        <p class="text-muted-op small mb-1"> Series: <span class="text-white">{{ $rutina->series }}</span></p>
                         @if($rutina->notas)
-                            <p class="text-muted-op small mb-3">📝 {{ $rutina->notas }}</p>
+                            <p class="text-muted-op small mb-3"> {{ $rutina->notas }}</p>
                         @endif
                         <div class="d-flex gap-2 mt-3">
                             <a href="/user/rutinas-personalizadas/{{ $rutina->id }}/edit" class="btn btn-outline-gold btn-sm font-bebas">✏️ Editar</a>
@@ -45,7 +45,7 @@
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-sm font-bebas"
                                     style="border:1px solid var(--red); color:var(--red);"
-                                    onclick="return confirm('¿Eliminar este ejercicio?')">🗑️ Eliminar</button>
+                                    onclick="return confirm('¿Eliminar este ejercicio?')"> Eliminar</button>
                             </form>
                         </div>
                     </div>

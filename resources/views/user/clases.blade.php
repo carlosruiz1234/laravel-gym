@@ -6,7 +6,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">🥊 Entrenamiento</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Entrenamiento</p>
             <h1 class="font-cinzel text-gold">Mis Clases</h1>
             @if($membresia)
                 <p class="fst-italic text-muted-op">Plan {{ $membresia->icono }} {{ $membresia->nombre }}</p>
@@ -25,11 +25,11 @@
                 @foreach($clases as $clase)
                 <div class="col-md-4">
                     <div class="card-op p-4 h-100">
-                        <div class="fs-2 mb-3">🥊</div>
+                        <div class="fs-2 mb-3"></div>
                         <div class="font-bebas text-gold fs-4 mb-1">{{ $clase->nombre }}</div>
-                        <p class="text-muted-op small mb-1">🕐 {{ $clase->horario }}</p>
-                        <p class="text-muted-op small mb-1">👤 {{ $clase->instructor }}</p>
-                        <p class="text-muted-op small mb-0">👥 {{ $clase->cupos }} cupos</p>
+                        <p class="text-muted-op small mb-1"> {{ $clase->horario }}</p>
+                        <p class="text-muted-op small mb-1"> {{ $clase->instructor }}</p>
+                        <p class="text-muted-op small mb-0"> {{ $clase->cupos }} cupos</p>
                     </div>
                 </div>
                 @endforeach

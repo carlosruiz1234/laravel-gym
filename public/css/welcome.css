@@ -43,3 +43,43 @@ body { background: var(--deep); color: #F5EDD8; font-family: 'Crimson Pro', seri
 .table tbody tr:hover {
     background: rgba(13,31,60,0.8) !important;
 }
+
+.hero-video-section {
+    background: #0A0E1A;
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.55) saturate(0.85);
+}
+
+.hero-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 14, 26, 0.72);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-deco {
+    z-index: 2;
+    position: relative;
+}
+.hero-deco {
+    z-index: 2;
+    position: absolute;
+    top: 530px;
+    right: 400px;
+    width: 450px;
+    height: auto;
+    opacity: 0.30;
+}

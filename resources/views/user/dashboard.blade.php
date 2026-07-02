@@ -7,7 +7,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">⚓ Panel de Tripulante</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Panel de Tripulante</p>
             <h1 class="font-cinzel text-gold">Bienvenido, {{ auth()->user()->name }}</h1>
             <p class="fst-italic text-muted-op">"El viaje continúa, nakama."</p>
         </div>
@@ -16,7 +16,7 @@
 
         <div class="col-md-4">
             <div class="card-op p-4 h-100">
-                <div class="fs-2 mb-3">💳</div>
+                <div class="fs-2 mb-3"></div>
                 <div class="font-bebas text-gold fs-5 mb-2">Mi Membresía</div>
                 @if($membresia)
                     <p class="text-muted-op small mb-1">Plan: <span class="text-white">{{ $membresia->icono }} {{ $membresia->nombre }}</span></p>
@@ -31,7 +31,7 @@
 
             <div class="col-md-4">
                 <div class="card-op p-4 h-100">
-                    <div class="fs-2 mb-3">🥊</div>
+                    <div class="fs-2 mb-3"></div>
                     <div class="font-bebas text-gold fs-5 mb-2">Clases Disponibles</div>
                     <p class="text-muted-op small mb-3">Explora todas las clases disponibles y reserva tu cupo.</p>
                     <a href="/user/clases" class="btn btn-outline-gold btn-sm font-bebas">Ver Clases →</a>
@@ -40,7 +40,7 @@
 
             <div class="col-md-4">
                 <div class="card-op p-4 h-100">
-                    <div class="fs-2 mb-3">💪</div>
+                    <div class="fs-2 mb-3"></div>
                     <div class="font-bebas text-gold fs-5 mb-2">Mi Rutina</div>
                     <p class="text-muted-op small mb-3">Consulta tu plan de entrenamiento semanal personalizado.</p>
                     <a href="/user/rutina" class="btn btn-outline-gold btn-sm font-bebas">Ver Rutina →</a>
@@ -49,7 +49,7 @@
 
                         <div class="col-md-4">
                 <div class="card-op p-4 h-100">
-                    <div class="fs-2 mb-3">📝</div>
+                    <div class="fs-2 mb-3"></div>
                     <div class="font-bebas text-gold fs-5 mb-2">Mi Rutina Personalizada</div>
                     <p class="text-muted-op small mb-3">Crea y gestiona tus propios ejercicios personalizados.</p>
                     <a href="/user/rutinas-personalizadas" class="btn btn-outline-gold btn-sm font-bebas">Ver Rutina →</a>
@@ -59,7 +59,7 @@
         </div>
 
         <div class="mt-5">
-            <a href="/" class="btn btn-op-red font-bebas px-4" style="letter-spacing:0.15em;">⚓ Volver al Inicio</a>
+            <a href="/" class="btn btn-op-red font-bebas px-4" style="letter-spacing:0.15em;"> Volver al Inicio</a>
         </div>
 
     </div>

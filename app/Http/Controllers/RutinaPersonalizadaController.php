@@ -35,7 +35,7 @@ class RutinaPersonalizadaController extends Controller
             'notas'     => $request->notas,
         ]);
 
-        return redirect('/user/rutinas-personalizadas')->with('success', '✅ Ejercicio creado correctamente');
+        return redirect('/user/rutinas-personalizadas')->with('success', ' Ejercicio creado correctamente');
     }
 
     public function editar($id)
@@ -56,12 +56,12 @@ class RutinaPersonalizadaController extends Controller
         ]);
 
         $rutina->update($request->all());
-        return redirect('/user/rutinas-personalizadas')->with('success', '✅ Ejercicio actualizado correctamente');
+        return redirect('/user/rutinas-personalizadas')->with('success', ' Ejercicio actualizado correctamente');
     }
 
     public function eliminar($id)
     {
         RutinaPersonalizada::where('user_id', auth()->id())->findOrFail($id)->delete();
-        return redirect('/user/rutinas-personalizadas')->with('success', '✅ Ejercicio eliminado correctamente');
+        return redirect('/user/rutinas-personalizadas')->with('success', ' Ejercicio eliminado correctamente');
     }
 }

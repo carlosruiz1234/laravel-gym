@@ -6,7 +6,7 @@
     <div class="container py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">💪 Entrenamiento</p>
+            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Entrenamiento</p>
             <h1 class="font-cinzel text-gold">Mi Rutina</h1>
             @if($membresia)
                 <p class="fst-italic text-muted-op">Plan {{ $membresia->icono }} {{ $membresia->nombre }}</p>
@@ -27,7 +27,7 @@
                     <div class="card-op p-4 h-100">
                         <div class="font-bebas text-red-op mb-1" style="letter-spacing:0.2em;">{{ $rutina->dia }}</div>
                         <div class="font-bebas text-gold fs-4 mb-2">{{ $rutina->ejercicio }}</div>
-                        <p class="text-muted-op small mb-0">📊 Series: <span class="text-white">{{ $rutina->series }}</span></p>
+                        <p class="text-muted-op small mb-0"> Series: <span class="text-white">{{ $rutina->series }}</span></p>
                     </div>
                 </div>
                 @endforeach

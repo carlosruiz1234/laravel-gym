@@ -7,7 +7,7 @@
 
         <div class="mb-5 d-flex justify-content-between align-items-end">
             <div>
-                <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;">🥊 Gestión</p>
+                <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Gestión</p>
                 <h1 class="font-cinzel text-gold">Clases</h1>
                 <p class="fst-italic text-muted-op">Total: {{ $clases->count() }} clases registradas</p>
             </div>
@@ -50,7 +50,7 @@
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-sm font-bebas"
                                         style="border:1px solid var(--red); color:var(--red);"
-                                        onclick="return confirm('¿Eliminar esta clase?')">🗑️ Eliminar</button>
+                                        onclick="return confirm('¿Eliminar esta clase?')"> Eliminar</button>
                                 </form>
                             </div>
                         </td>
