@@ -5,3 +5,66 @@
 [x-cloak] {
     display: none;
 }
+
+
+/* Fuente mono solo para números/coordenadas — dale un aire técnico de bitácora */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap');
+.font-mono-op{ font-family:'JetBrains Mono', monospace; }
+
+/* --- Stats strip --- */
+.log-item-op{ position:relative; }
+.stat-num{ letter-spacing:-0.02em; }
+
+/* --- Ruta de servicios --- */
+.route-op{ position:relative; margin-top:20px; }
+.route-line-op{
+    position:absolute; top:46px; left:0; right:0; height:2px;
+    background-image: repeating-linear-gradient(90deg, var(--gold, #C9A227) 0 10px, transparent 10px 20px);
+    opacity:.4;
+    display:block;
+}
+@media (max-width:767px){ .route-line-op{ display:none; } }
+
+.stop-op{ display:flex; flex-direction:column; }
+.stop-offset-op{ margin-top:34px; }
+@media (max-width:767px){ .stop-offset-op{ margin-top:0; } }
+
+.stop-badge-op{
+    width:80px; height:80px; border-radius:50%;
+    border:1.5px solid var(--gold, #C9A227);
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.04), transparent);
+    display:flex; align-items:center; justify-content:center;
+    position:relative; z-index:2; margin-bottom:18px;
+}
+.stop-badge-op svg{ width:28px; height:28px; stroke: var(--parchment, #EDE6D6); }
+.stop-badge-op::after{
+    content: attr(data-mark);
+    position:absolute; bottom:-8px; right:-8px;
+    width:24px; height:24px; border-radius:50%;
+    background: var(--red-op, #C1362F);
+    color:#0A0F1C; font-family:'JetBrains Mono', monospace;
+    font-size:.65rem; font-weight:600;
+    display:flex; align-items:center; justify-content:center;
+    border:2px solid var(--deep, #0A0F1C);
+}
+
+.stop-card-op{ transition: border-color .25s ease, transform .25s ease; }
+.stop-op:hover .stop-card-op{ border-color: var(--red-op, #C1362F); transform: translateY(-3px); }
+.stop-op:hover .stop-badge-op{ border-color: var(--red-op, #C1362F); }
+
+/* --- CTA con anillos tipo radar en vez de calavera gigante --- */
+.cta-op{ isolation:isolate; }
+.cta-ring-op{
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    border:1px solid var(--gold, #C9A227);
+    opacity:.12;
+    pointer-events:none;
+}
+.cta-ring-lg-op{ width:520px; height:520px; }
+.cta-ring-sm-op{ width:340px; height:340px; }
+
+@media (prefers-reduced-motion: reduce){
+    .stop-card-op{ transition:none; }
+}

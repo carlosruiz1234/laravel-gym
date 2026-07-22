@@ -29,59 +29,78 @@
 </section>
 
 
-<div class="bg-ocean border-top border-bottom border-gold py-4">
+<div class="bg-ocean border-top border-bottom border-gold py-4 log-strip-op">
     <div class="container">
         <div class="row text-center g-0">
-            <div class="col border-end border-gold"><div class="stat-num">1200+</div><div class="stat-label">Piratas Activos</div></div>
-            <div class="col border-end border-gold"><div class="stat-num">18</div><div class="stat-label">Instructores</div></div>
-            <div class="col border-end border-gold"><div class="stat-num">24/7</div><div class="stat-label">Acceso</div></div>
-            <div class="col border-end border-gold"><div class="stat-num">12</div><div class="stat-label">Años</div></div>
-            <div class="col"><div class="stat-num">98%</div><div class="stat-label">Satisfacción</div></div>
+            <div class="col log-item-op"><div class="stat-num font-mono-op">1.200+</div><div class="stat-label">Tripulantes Activos</div></div>
+            <div class="col log-item-op"><div class="stat-num font-mono-op">18</div><div class="stat-label">Instructores</div></div>
+            <div class="col log-item-op"><div class="stat-num font-mono-op">24/7</div><div class="stat-label">Acceso al Barco</div></div>
+            <div class="col log-item-op"><div class="stat-num font-mono-op">12</div><div class="stat-label">Años Navegando</div></div>
+            <div class="col log-item-op"><div class="stat-num font-mono-op">98%</div><div class="stat-label">Satisfacción</div></div>
         </div>
     </div>
 </div>
 
-<section class="bg-deep py-5">
-    <div class="container text-center">
-        <p class="font-bebas text-red-op" style="letter-spacing:0.4em;">⚔ Nuestros Poderes</p>
-        <h2 class="font-cinzel mb-2">Servicios <span class="text-gold">Legendarios</span></h2>
-        <p class="fst-italic text-muted-op mb-5">Como las frutas del Diablo, cada servicio te da habilidades únicas.</p>
-        <div class="row g-1">
-            <div class="col-md-3">
-                <div class="card-op p-4 h-100 text-start">
-                    <div class="fs-2 mb-3"></div>
-                    <div class="font-bebas text-gold fs-5 mb-2">Zona de Pesas</div>
-                    <p class="text-muted-op small">Más de 200 máquinas para forjar la fuerza de un Yonko.</p>
+<section class="bg-deep py-5 route-section-op">
+    <div class="container">
+        <p class="font-bebas text-red-op" style="letter-spacing:0.4em;">⚔ Bitácora de Ruta</p>
+        <h2 class="font-cinzel mb-2">Cuatro paradas antes de <span class="text-gold">zarpar</span></h2>
+        <p class="fst-italic text-muted-op mb-5" style="max-width:480px;">Cada escala te da una habilidad distinta. No hay atajos: se navega una a la vez.</p>
+
+        <div class="route-op">
+            <div class="route-line-op"></div>
+            <div class="row g-4">
+
+                <div class="col-md-3 stop-op">
+                    <div class="stop-badge-op" data-mark="I">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 4v16M18 4v16M6 8h12M6 16h12"/></svg>
+                    </div>
+                    <div class="card-op p-4 text-start stop-card-op">
+                        <div class="font-bebas text-gold fs-5 mb-2">Zona de Pesas</div>
+                        <p class="text-muted-op small mb-0">Más de 200 máquinas para forjar la fuerza de un Yonko.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card-op p-4 h-100 text-start">
-                    <div class="fs-2 mb-3"></div>
-                    <div class="font-bebas text-gold fs-5 mb-2">Artes Marciales</div>
-                    <p class="text-muted-op small">Boxeo, MMA y Jiu-jitsu. El Haki en su máxima expresión.</p>
+
+                <div class="col-md-3 stop-op stop-offset-op">
+                    <div class="stop-badge-op" data-mark="II">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 8l8 8M16 8l-8 8"/><circle cx="12" cy="12" r="9"/></svg>
+                    </div>
+                    <div class="card-op p-4 text-start stop-card-op">
+                        <div class="font-bebas text-gold fs-5 mb-2">Artes Marciales</div>
+                        <p class="text-muted-op small mb-0">Boxeo, MMA y Jiu-jitsu. El Haki en su máxima expresión.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card-op p-4 h-100 text-start">
-                    <div class="fs-2 mb-3"></div>
-                    <div class="font-bebas text-gold fs-5 mb-2">Zona Zen</div>
-                    <p class="text-muted-op small">Yoga y meditación. El Haki de Observación requiere mente tranquila.</p>
+
+                <div class="col-md-3 stop-op">
+                    <div class="stop-badge-op" data-mark="III">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+                    </div>
+                    <div class="card-op p-4 text-start stop-card-op">
+                        <div class="font-bebas text-gold fs-5 mb-2">Zona Zen</div>
+                        <p class="text-muted-op small mb-0">Yoga y meditación. El Haki de Observación requiere mente tranquila.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card-op p-4 h-100 text-start">
-                    <div class="fs-2 mb-3"></div>
-                    <div class="font-bebas text-gold fs-5 mb-2">Rutinas Personalizadas</div>
-                    <p class="text-muted-op small">Tu propio Log Pose. Planes diseñados para tus metas.</p>
+
+                <div class="col-md-3 stop-op stop-offset-op">
+                    <div class="stop-badge-op" data-mark="IV">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.8 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg>
+                    </div>
+                    <div class="card-op p-4 text-start stop-card-op">
+                        <div class="font-bebas text-gold fs-5 mb-2">Rutinas Personalizadas</div>
+                        <p class="text-muted-op small mb-0">Tu propio Log Pose. Planes diseñados para tus metas.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
 
-<section class="bg-ocean text-center py-5 position-relative overflow-hidden">
-    <div style="position:absolute;font-size:30rem;opacity:0.03;top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;">☠</div>
+<section class="bg-ocean text-center py-5 position-relative overflow-hidden cta-op">
+    <div class="cta-ring-op cta-ring-lg-op"></div>
+    <div class="cta-ring-op cta-ring-sm-op"></div>
     <div class="container position-relative">
+        <p class="font-mono-op text-gold small" style="letter-spacing:0.2em;">COORDENADAS FIJADAS</p>
         <h2 class="font-cinzel mb-2">¿Listo para <span class="text-gold">zarpar?</span></h2>
         <p class="fst-italic text-muted-op fs-5 fw-light mb-4">"Yo quiero vivir aunque haya peligro. Eso es libertad." — Monkey D. Luffy</p>
         <div class="d-flex gap-3 justify-content-center flex-wrap">

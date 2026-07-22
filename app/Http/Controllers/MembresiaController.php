@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 class MembresiaController extends Controller
 {
 
-
+    public function index()
+    {
+        $membresias = Membresia::all();
+        return view('admin.membresias.index', compact('membresias'));
+    }
 
     public function edit($id)
     {

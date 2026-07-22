@@ -2,13 +2,13 @@
 
 @section('content')
 
-<div class="min-vh-100" style="padding-top:5rem; background: linear-gradient(160deg, #0A0E1A 0%, #0D1F3C 60%, #0A0E1A 100%);">
-    <div class="container py-5">
+<div class="min-vh-100 op-panel-bg op-map-bg">
+    <div class="container position-relative py-5">
 
         <div class="mb-5">
-            <p class="font-bebas text-red-op mb-1" style="letter-spacing:0.3em;"> Elige tu Poder</p>
-            <h1 class="font-cinzel text-gold">Membresías</h1>
-            <p class="fst-italic text-muted-op">"Cada pirata elige su propio camino."</p>
+            <p class="font-bebas text-red-op op-tracking-wide mb-1">Elige tu Poder</p>
+            <h1 class="font-cinzel text-gold display-5">Membresías</h1>
+            <p class="fst-italic text-muted-op mb-0">"Cada pirata elige su propio camino."</p>
         </div>
 
         @if(session('success'))
@@ -17,23 +17,24 @@
             </div>
         @endif
 
-        <div class="row g-3">
+        <div class="row g-4">
             @foreach($membresias as $membresia)
+            @php($esActual = auth()->user()->membresia_id == $membresia->id)
             <div class="col-md-4">
-                <div class="card-op p-4 h-100 text-center {{ auth()->user()->membresia_id == $membresia->id ? 'border border-warning' : '' }}">
+                <div class="card-op border rounded-4 shadow-sm p-4 h-100 text-center {{ $esActual ? 'border-gold' : 'border-gold border-opacity-25' }}">
                     <div class="fs-1 mb-3">{{ $membresia->icono }}</div>
                     <div class="font-bebas text-gold fs-3 mb-1">{{ $membresia->nombre }}</div>
-                    <div class="font-bebas text-red-op mb-3" style="letter-spacing:0.1em;">{{ $membresia->rango }}</div>
+                    <div class="font-bebas text-red-op op-tracking mb-3">{{ $membresia->rango }}</div>
                     <p class="text-white fs-4 mb-3">${{ $membresia->precio }}<span class="text-muted-op fs-6">/mes</span></p>
                     <p class="text-muted-op small mb-4">{{ $membresia->beneficios }}</p>
 
-                    @if(auth()->user()->membresia_id == $membresia->id)
-                        <button class="btn font-bebas w-100" style="background:rgba(201,146,42,0.2); color:#F0C060; border:1px solid #C9922A; letter-spacing:0.15em;">
-                             Plan Actual
-                        </button>
+                    @if($esActual)
+                        <span class="badge rounded-pill bg-gold-subtle text-gold-emphasis font-bebas op-tracking w-100 py-2">
+                            Plan Actual
+                        </span>
                     @else
-                        <a href="/user/membresia/{{ $membresia->id }}/pago" class="btn btn-outline-gold font-bebas w-100" style="letter-spacing:0.15em;">
-                             Comprar Plan
+                        <a href="/user/membresia/{{ $membresia->id }}/pago" class="btn btn-outline-gold font-bebas w-100 op-tracking">
+                            Comprar Plan
                         </a>
                     @endif
                 </div>
@@ -42,7 +43,7 @@
         </div>
 
         <div class="mt-5">
-            <a href="/user/dashboard" class="btn btn-op-red font-bebas px-4" style="letter-spacing:0.15em;">← Volver al Panel</a>
+            <a href="/user/dashboard" class="btn btn-op-red font-bebas px-4 op-tracking">← Volver al Panel</a>
         </div>
 
     </div>

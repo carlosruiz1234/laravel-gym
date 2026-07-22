@@ -83,3 +83,146 @@ body { background: var(--deep); color: #F5EDD8; font-family: 'Crimson Pro', seri
     height: auto;
     opacity: 0.30;
 }
+/* ==========================================================================
+   Panel de Administración — reutiliza las variables de arriba (--gold,
+   --gold-l, --deep, --ocean, --red, --muted). No define colores nuevos.
+   ========================================================================== */
+
+.op-panel-bg{
+    padding-top: 5rem;
+    background: linear-gradient(160deg, var(--deep) 0%, var(--ocean) 60%, var(--deep) 100%);
+}
+
+/* Tracking de letras reutilizable */
+.op-tracking-wide{ letter-spacing: 0.3em; }
+.op-tracking{ letter-spacing: 0.1em; }
+.op-tracking-tight{ letter-spacing: 0.05em; }
+
+/* Tablas con borde dorado translúcido y hover de fila */
+.op-table{ border-color: rgba(201,146,42,.2); }
+.op-table thead tr{ border-color: rgba(201,146,42,.2); }
+.op-table tbody tr{ border-color: rgba(201,146,42,.1); transition: background-color .15s ease; }
+.op-table tbody tr:hover{ background-color: rgba(201,146,42,.08); }
+
+/* Textura de "mapa viejo" para fondos de sección */
+.op-map-bg{ position: relative; overflow: hidden; }
+.op-map-bg::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+        radial-gradient(1px 1px at 15% 25%, rgba(201,146,42,.18) 0, transparent 60%),
+        radial-gradient(1px 1px at 75% 12%, rgba(201,146,42,.14) 0, transparent 60%),
+        radial-gradient(1px 1px at 50% 70%, rgba(201,146,42,.12) 0, transparent 60%),
+        radial-gradient(1px 1px at 90% 60%, rgba(201,146,42,.14) 0, transparent 60%),
+        linear-gradient(rgba(201,146,42,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,146,42,.05) 1px, transparent 1px);
+    background-size: auto, auto, auto, auto, 48px 48px, 48px 48px;
+    pointer-events:none;
+}
+
+/* Marca de agua: timón de barco */
+.op-wheel-watermark{
+    position:absolute; top:0; right:0;
+    width:380px; height:380px;
+    color: var(--gold);
+    opacity:.1;
+    transform: translate(15%,-15%);
+    animation: op-spin 140s linear infinite;
+    pointer-events:none;
+}
+@keyframes op-spin{ to{ transform: translate(15%,-15%) rotate(360deg); } }
+@media (prefers-reduced-motion: reduce){
+    .op-wheel-watermark{ animation:none; }
+}
+
+/* Marca de agua: silueta de barco */
+.op-ship-watermark{
+    position:absolute; bottom:0; left:0;
+    width:520px; height:260px;
+    color: var(--gold);
+    opacity:.1;
+    transform: translate(-8%, 15%);
+    pointer-events:none;
+}
+
+/* Tarjetas de navegación estilo "cartel de se busca" */
+.op-poster{ transition: transform .2s ease, box-shadow .2s ease; }
+.op-poster:hover{ transform: translateY(-4px); }
+.op-poster__stamp{
+    letter-spacing:.1em; font-size:.65rem;
+    color: var(--gold-l);
+    border: 1px solid rgba(201,146,42,.35);
+}
+
+.op-badge-membresia{
+    letter-spacing:.05em;
+    background: rgba(201,146,42,.12);
+    color: var(--gold-l);
+}
+
+.op-panel-bg{
+    padding-top: 5rem;
+    background: linear-gradient(160deg, var(--deep) 0%, var(--ocean) 60%, var(--deep) 100%);
+}
+
+.op-tracking-wide{ letter-spacing: 0.3em; }
+.op-tracking{ letter-spacing: 0.1em; }
+.op-tracking-tight{ letter-spacing: 0.05em; }
+
+.op-table{ border-color: rgba(201,146,42,.2); }
+.op-table thead tr{ border-color: rgba(201,146,42,.2); }
+.op-table tbody tr{ border-color: rgba(201,146,42,.1); transition: background-color .15s ease; }
+.op-table tbody tr:hover{ background-color: rgba(201,146,42,.08); }
+
+.op-map-bg{ position: relative; overflow: hidden; }
+.op-map-bg::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+        radial-gradient(1px 1px at 15% 25%, rgba(201,146,42,.18) 0, transparent 60%),
+        radial-gradient(1px 1px at 75% 12%, rgba(201,146,42,.14) 0, transparent 60%),
+        radial-gradient(1px 1px at 50% 70%, rgba(201,146,42,.12) 0, transparent 60%),
+        radial-gradient(1px 1px at 90% 60%, rgba(201,146,42,.14) 0, transparent 60%),
+        linear-gradient(rgba(201,146,42,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,146,42,.05) 1px, transparent 1px);
+    background-size: auto, auto, auto, auto, 48px 48px, 48px 48px;
+    pointer-events:none;
+}
+
+.op-wheel-watermark{
+    position:absolute; top:0; right:0;
+    width:380px; height:380px;
+    color: var(--gold);
+    opacity:.1;
+    transform: translate(15%,-15%);
+    animation: op-spin 140s linear infinite;
+    pointer-events:none;
+}
+@keyframes op-spin{ to{ transform: translate(15%,-15%) rotate(360deg); } }
+@media (prefers-reduced-motion: reduce){
+    .op-wheel-watermark{ animation:none; }
+}
+
+.op-ship-watermark{
+    position:absolute; bottom:0; left:0;
+    width:520px; height:260px;
+    color: var(--gold);
+    opacity:.1;
+    transform: translate(-8%, 15%);
+    pointer-events:none;
+}
+
+.op-poster{ transition: transform .2s ease, box-shadow .2s ease; }
+.op-poster:hover{ transform: translateY(-4px); }
+.op-poster__stamp{
+    letter-spacing:.1em; font-size:.65rem;
+    color: var(--gold-l);
+    border: 1px solid rgba(201,146,42,.35);
+}
+
+
+.op-badge-membresia{
+    letter-spacing:.05em;
+    background: rgba(201,146,42,.12);
+    color: var(--gold-l);
+}
